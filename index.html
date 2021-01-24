@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container-calc">
+
+        <header id="header-calc">
+            <h1>Calculadora IMC</h1>
+            <p>(Indice Massa Corporal)</p>
+        </header>
+        <main id="main-calc">
+            <section class="info-user">
+                <form class="form-info-user">
+                    <label for="nameUser">Nome</label>
+                    <input type="text" name="nameUser" id="nameUser" placeholder="Entre com o nome">
+                    <br>
+                    <label for="heightUser">Altura</label>
+                    <input type="text" name="heightUser" id="heightUser" placeholder="Exemplo: 1.80">
+                    <br>
+                    <label for="weightUser">Peso</label>
+                    <input type="text" name="weightUser" id="weightUser" placeholder="Exemplo: 70"> 
+                    <br>
+                    <input type="submit" value="Enviar" onclick="sendInfoUser()">
+                </form>                       
+            </section>
+            <section class="info-user">
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" id="userName" disabled>
+                <br>
+                <label for="userHeight">Altura</label>
+                <input type="text" name="userHeight" id="userHeight" disabled>
+                <br>
+                <label for="userWeight">Peso</label>
+                <input type="text" name="userWeight" id="userWeight" disabled>
+                <br>
+                <label for="userStatus">Status</label>
+                <input type="text" name="userStatus" id="userStatus" disabled>
+            </section>
+        </main>
+
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
